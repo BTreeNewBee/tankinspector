@@ -12,6 +12,12 @@ namespace Smellyriver.TankInspector.Modeling
             EquipmentScript script;
             switch (type)
             {
+                case "UpgradedStaticFactorDevice":
+                    script = new UpgradedStaticFactorDeviceScript(database);
+                    break;
+                case "UpgradableStaticFactorDevice":
+                    script = new UpgradableStaticFactorDeviceScript(database);
+                    break;
                 case "StaticFactorDevice":
                     script = new StaticFactorDeviceScript(database);
                     break;

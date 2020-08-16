@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Xml;
 
 namespace Smellyriver.TankInspector.Modeling
@@ -22,6 +23,9 @@ namespace Smellyriver.TankInspector.Modeling
             {
                 Equipment equipment = new Equipment(this.Database);
                 equipment.Deserialize(reader);
+                if (equipment.Key.Equals("xmlref")) {
+                    continue;
+                }
                 Equipments.Add(equipment.Key, equipment);
             }
         }

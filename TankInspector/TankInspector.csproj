@@ -240,6 +240,8 @@
     <Compile Include="Modeling\Tank\SmoothTurretSkill.cs" />
     <Compile Include="Modeling\Tank\SniperSkill.cs" />
     <Compile Include="Modeling\StatAttribute.cs" />
+    <Compile Include="Modeling\Tank\UpgradedStaticFactorDeviceScript.cs" />
+    <Compile Include="Modeling\Tank\UpgradableStaticFactorDeviceScript.cs" />
     <Compile Include="Modeling\Tank\TypeCompDescr.cs" />
     <Compile Include="Modeling\Tank\UniversalistSkill.cs" />
     <Compile Include="Modeling\Tank\LoaderSkill.cs" />

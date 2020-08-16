@@ -24,6 +24,10 @@ namespace Smellyriver.TankInspector.Modeling
             {
                 Consumable consumable = new Consumable(this.Database);
                 consumable.Deserialize(reader);
+                if (consumable.Key.Equals("xmlref"))
+                {
+                    continue;
+                }
                 Consumables.Add(consumable.Key, consumable);
             }
         }
